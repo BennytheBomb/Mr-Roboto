@@ -158,7 +158,7 @@ void loop() {
         return;
   }
   sensors[0] = predict(analogRead(leftInput), 0);
-  sensors[1] = predict(analogRead(rightInput), 0);
+  sensors[1] = predict(analogRead(rightInput), 1);
 
   if (isBlack(sensors[1])) {
     if (isBlack(sensors[0])) {
